@@ -1,0 +1,36 @@
+----- HTML -----
+<!DOCTYPE>
+<!DOCTYPE>		   Tag atu determina tipu husi document/página
+<html>			   Tag atu kria dokumentu HTML
+<title>			   Tag atu kria Titlu husi dokumentu/página
+<body>			   Tag atu kria isilolon(body)/contente husi dokumentu HTML
+<h1> to’o <h6>	   Tag atu kria titlu(heading)
+<p>			       Tag atu kria paragrafu(paragraph)
+<br>			   Tag atu hafahe linha ida hó linha seluk
+<!---...--->	   Tag atu halo komentariu iha dokumentu HTML
+<nav>		       Tag atu halo navigasaun link (tag foun HTML5)
+<header	           Tag atu kria ulun(header) ba dokumentu/página ou bá deit parte balun(tag foun HTML5)
+<section>	       Tag atu kria sessaun/parte kík ida iha dokumentu/página laran (tag foun HTML5)
+<label>		       Tag atu kria label ba element ida <input>
+<input>		       Tag atu kria kontrolu input (textbox, button, radio, checkbox)
+<img>		       Tag atu hatama imagen iha página
+<a>	               Tag atu kria ligasaun entre dokumentu/página ida hó página seluk(hyperlink)
+<link>	           Tag atu liga dokumentu/página ba referensia external (baibain uja ba link style sheet)
+<ul>		       Tag atu kria lista(list) maibe na uja númeru
+<li>    	       Tag atu klia item iha lista laran
+<head>	           Tag hanesan parte husi ulun/kakutak ba dokumentu/página ida
+<meta>	           Tag atu halo metadata konaba dokumentu/página HTML
+<div>	           Tag atu kria difizaun ida iha dokumentu/página
+<style>			   Tag atu kria style ba dokumentu/página
+<footer>	       Tag atu kria ain(footer) ba dokumentu/página ou bá deit parte balun(tag foun HTML5)
+
+
+----- CSS -----
+Selector Universal;	        afeita ba element hotu
+Selector Element;	        Deklara ho naran element ne’e rasik
+Selector Id;		        aplika ba valor husi attribute ID iha tag HTML
+Selector Class;		        aplika ba valor husi attribute Class iha tag HTML
+Selector Group;		        Utiliza ba tag HTML Kuandu property sira iha laran hanesan.
+Inline CSS;		            Hakerek direita iha tag HTML liu husi attribute style
+External CSS; 		        File CSS iha file seluk mak bolu liu husi <link href=“”>
+Pseudo Class Selector;  	asesu ba parte balun husi html ne’ebe ita la-hare no lahakerek (fatin special/spesifiku). Pseudo Class hakerek ho simbolu “:”

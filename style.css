@@ -1,0 +1,287 @@
+/* global */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.active{
+    color: #fc036b;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.sub-menu{
+    font-weight: normal;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+/* Navbar */
+nav{
+    background: #484872;
+}
+
+.navbar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 20px;
+    color: whitesmoke;
+}
+
+label[for="menu"],
+#menu {
+  display: none;
+}
+
+label[for="menu"] {
+    font-size: 2rem;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.nav-links li{
+    margin: 0 30px;
+}
+
+.menu{
+    position: relative;
+
+}
+
+.sub-menu{
+    position: absolute;
+    background-color: #484872;
+    left: -35px;
+    width: 165px;
+    top: 20px;
+    display: none;
+}
+
+.sub-menu a{
+    color: whitesmoke;
+}
+
+.sub-menu li{
+    padding: 1rem 0;
+
+}
+
+.ctn{
+    padding: 8px 15px;
+    background: #fc036b;
+    border-radius: 30px;
+    color: whitesmoke;
+}
+
+
+/* info */
+#info a{
+    color: #000;
+}
+
+
+/* Header */
+header{
+    width: 100vw;
+    height: 80vh;
+    background-image: url(img/9.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.header{
+    margin-bottom: 150px;
+    margin-top: 150px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.header h2{
+    font-size: 4vmin;
+}
+
+.line{
+    width: 150px;
+    height: 4px;
+    background: #fc036b;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.header h1{
+    font-size: 7vmin;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+
+/* Content */
+section{
+    width: 80%;
+    margin: 80px auto;
+}
+
+.content{
+    display: block;
+    text-align: center;
+}
+
+figure img{
+    margin: 1rem;
+}
+
+.title{
+    text-align: center;
+    font-size: 4vmin;
+    color: #49497e;
+    top: 12px;
+}
+
+.txt h4, .txt p{
+    padding-left: 37px;
+    text-align: left;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.row:nth-child(odd){
+    flex-direction: row-reverse;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h4{
+    font-size: 3vmin;
+    color: #484872;
+    margin: 20px auto;
+}
+
+p{
+    color: #7c7c7c;
+    padding: 0 40px;
+}
+
+/* footer */
+.footer{
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 80px;
+    margin: 0;
+    background: #484872;
+    text-align: center;
+}
+
+.footer p{
+    color: whitesmoke;
+    margin: 20px auto;
+}
+
+/* Mobile Device */
+@media screen and (max-width:850px){
+    ul.nav-links{
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 80%;
+        height: 100vh;
+        justify-content: space-evenly;
+        transition: all .5s ease;
+        background-color: #484872;
+        display: none;
+    }
+
+    label[for="menu"] {
+        display: block;
+        z-index: 3;
+    }
+
+    #menu:checked ~ ul {
+        display: flex;
+    }
+    
+    .row, .row:nth-child(odd){
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .col{
+        margin: 20px auto;
+    }
+
+    .col img{
+        max-width: 90%;
+    }
+    
+    .footer{
+        padding: 10px;
+    }
+    
+}
+
+/* animation */
+img {
+    transition: transform .3s ease;
+}
+
+img:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 2px 5px #7c7c7c;
+}
+
+.ctn:hover{
+    background: whitesmoke;
+    color: #fc036b;
+    box-shadow: 2px 2px 5px #00000056;
+    cursor: pointer;
+}
+
+li:hover, a:hover{
+    color: #fc036b;
+    cursor: pointer;
+}
+
+.menu:hover .sub-menu{
+    display: block;
+}
+
+.sub-menu a:hover{
+    color: #fc036b;
+}
